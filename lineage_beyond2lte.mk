@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The aospOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,23 +36,16 @@ TARGET_SCREEN_WIDTH := 1440
 ## Inherit some common Elixir stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Elixir Flags
-WITH_GMS := true
-ELIXIR_BUILD_TYPE := OFFICIAL
-BUILD_USERNAME := FrEeRuNnEr4EvEr
-BUILD_HOSTNAME := Elixir
-
 # Additional Flags
 IS_PHONE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ACORE := false
-
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-FORCE_LAWNCHAIR := true
+
 
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1440
