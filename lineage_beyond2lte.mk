@@ -36,14 +36,14 @@ TARGET_SCREEN_WIDTH := 1440
 ## Inherit some common Elixir stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Additional Flags
+# CrDroid Flags
 IS_PHONE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 
